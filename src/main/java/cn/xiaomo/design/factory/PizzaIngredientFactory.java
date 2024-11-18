@@ -6,20 +6,19 @@ import cn.xiaomo.design.factory.ingredient.Dough;
 import cn.xiaomo.design.factory.ingredient.Sauce;
 
 /**
- * @description 披萨原料工厂
- * 
+ *
  **/
 public interface PizzaIngredientFactory {
 
-    // 获得生面团原料
-    Dough createDough();
+  // 获得生面团原料
+  Dough createDough();
 
-    // 获得酱汁原料
-    Sauce createSauce();
+  // 获得酱汁原料
+  Sauce createSauce();
 
-    // 获得奶酪原料
-    Cheese createCheese();
+  // 获得奶酪原料
+  Cheese createCheese();
 
-    // 获得蛤蜊原料
-    Clams createClams();
+  // 获得蛤蜊原料
+  Clams createClams();
 }

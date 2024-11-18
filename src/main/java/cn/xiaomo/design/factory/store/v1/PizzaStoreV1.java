@@ -4,23 +4,22 @@ import cn.xiaomo.design.factory.SimplePizzaFactory;
 import cn.xiaomo.design.factory.pizza.Pizza;
 
 /**
- * @description
- * 
+ *
  **/
 public class PizzaStoreV1 {
 
-    private SimplePizzaFactory factory;
+  private SimplePizzaFactory factory;
 
-    public PizzaStoreV1(SimplePizzaFactory factory) {
-        this.factory = factory;
-    }
+  public PizzaStoreV1(SimplePizzaFactory factory) {
+    this.factory = factory;
+  }
 
-    public Pizza orderPizza(String pizzaType) {
-        Pizza pizza = factory.createPizza(pizzaType);
-        pizza.prepare();
-        pizza.bake();
-        pizza.cut();
-        pizza.box();
-        return pizza;
-    }
+  public Pizza orderPizza(String pizzaType) {
+    Pizza pizza = factory.createPizza(pizzaType);
+    pizza.prepare();
+    pizza.bake();
+    pizza.cut();
+    pizza.box();
+    return pizza;
+  }
 }
